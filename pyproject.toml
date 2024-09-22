@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "streamdeck_sdk_cli"
-version = "0.0.1.dev8"
+version = "0.0.1.dev10"
 authors = [
     { name = "Grigoriy Gusev", email = "thegrigus@gmail.com" },
 ]
@@ -34,6 +34,10 @@ classifiers = [
     "License :: OSI Approved :: Apache Software License",
     "Operating System :: OS Independent",
 ]
+
+[project.urls]
+Homepage = "https://github.com/gri-gus/streamdeck-python-sdk-cli"
+Source = "https://github.com/gri-gus/streamdeck-python-sdk-cli"
 
 [project.scripts]
 streamdeck_sdk = "streamdeck_sdk_cli.executable.executable:main"
