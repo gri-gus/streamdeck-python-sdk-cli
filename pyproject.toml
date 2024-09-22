@@ -1,0 +1,45 @@
+[build-system]
+requires = ["setuptools >= 60.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "streamdeck_sdk_cli"
+version = "0.0.1.dev8"
+authors = [
+    { name = "Grigoriy Gusev", email = "thegrigus@gmail.com" },
+]
+description = "Command Line Interface for streamdeck-python-sdk."
+readme = "README-PYPI.md"
+dependencies = []
+requires-python = ">=3.8"
+keywords = [
+    "streamdeck sdk cli",
+    "streamdeck test project",
+    "python",
+    "sdk",
+    "streamdeck",
+    "streamdeck-sdk",
+    "streamdeck_sdk",
+    "stream deck sdk",
+    "stream deck",
+    "elgato",
+    "elgato sdk",
+    "elgato stream deck",
+    "streamdeck-python-sdk",
+    "streamdeck_python_sdk",
+    "streamdeck python sdk",
+]
+classifiers = [
+    "Programming Language :: Python :: 3.10",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+]
+
+[project.scripts]
+streamdeck_sdk = "streamdeck_sdk_cli.executable.executable:main"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["src"]
