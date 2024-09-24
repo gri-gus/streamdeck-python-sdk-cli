@@ -65,3 +65,13 @@ streamdeck_sdk build -i com.bestdeveloper.mytestplugin.sdPlugin -F
 ```
 
 `-F` : Forced packaging through an unofficial builder.
+
+### Update the files that are used to run the plugin
+
+The files `init.py`, `run.bat`, `run.sh` will be updated.
+
+```shell
+streamdeck_sdk updatelaunch -i com.bestdeveloper.mytestplugin.sdPlugin
+```
+
+`-i` : Project folder for packaging.
